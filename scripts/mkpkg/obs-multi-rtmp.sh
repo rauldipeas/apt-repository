@@ -8,6 +8,8 @@ cd obs-multi-rtmp
 sudo apt install -y\
 	cmake\
 	libobs-dev\
+	libgbm1\
+	libglapi-mesa\
 	obs-studio\
 	qtbase5-dev
 makedeb
