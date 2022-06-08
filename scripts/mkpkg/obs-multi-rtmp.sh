@@ -8,7 +8,7 @@ cd obs-multi-rtmp
 sudo apt install -y\
 	cmake\
 	libobs-dev
-makedeb
+makedeb -d
 cd ..
 cp\
 	obs-multi-rtmp/obs-multi-rtmp*.deb\
