@@ -29,6 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           sudo sed -i 's/focal/jammy/g' /etc/apt/sources.list
+          sudo sed -i 's/focal/jammy/g' /etc/apt/sources.list.d/*.list
           sudo add-apt-repository -yn multiverse
           sudo add-apt-repository -yn universe
           echo\
