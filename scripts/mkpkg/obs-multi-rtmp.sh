@@ -7,7 +7,7 @@ git clone -q\
 cd obs-multi-rtmp
 sudo apt install -y\
 	libgbm1\
-	libglapi-mesa\
+	libglapi-mesa
 sudo apt install -y\
 	cmake\
 	libobs-dev\
