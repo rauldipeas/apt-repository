@@ -7,8 +7,7 @@ git clone -q\
 cd obs-multi-rtmp
 sudo apt install -y\
 	cmake\
-	libobs-dev\
-	qtbase5-dev
+	libobs-dev
 makedeb
 cd ..
 cp\
