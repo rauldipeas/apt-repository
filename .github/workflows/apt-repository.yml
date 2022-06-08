@@ -39,7 +39,6 @@ jobs:
             >/dev/null
           sudo dpkg --add-architecture i386
           sudo apt update
-          sudo apt dist-upgrade -y
           sudo apt install -y makedeb
       - name: Run a one-line script
 #        run: bash build.sh
