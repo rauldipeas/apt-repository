@@ -6,13 +6,8 @@ git clone -q\
 	https://aur.archlinux.org/obs-multi-rtmp.git
 cd obs-multi-rtmp
 sudo apt install -y\
-	libgbm1\
-	libglapi-mesa
-sudo apt install -y\
 	cmake\
 	libobs-dev\
-	libgbm1\
-	libglapi-mesa\
 	qtbase5-dev
 makedeb
 cd ..
