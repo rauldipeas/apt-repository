@@ -13,7 +13,6 @@ sudo apt install -y\
 	libobs-dev\
 	libgbm1\
 	libglapi-mesa\
-	obs-studio\
 	qtbase5-dev
 makedeb
 cd ..
