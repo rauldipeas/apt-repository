@@ -8,7 +8,7 @@ cd obs-multi-rtmp
 sudo apt install -y\
 	cmake\
 	libobs-dev\
-	qtcore5-dev
+	qtbase5-dev
 makedeb -d
 cd ..
 cp\
