@@ -9,7 +9,7 @@ sudo apt install -y\
 	cmake\
 	libobs-dev\
 	obs-studio\
-	qtcore5-dev
+	qtbase5-dev
 makedeb
 cd ..
 cp\
