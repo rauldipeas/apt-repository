@@ -5,11 +5,7 @@ mkdir -p assets/packages
 
 bash scripts/mkpkg/obs-multi-rtmp.sh
 
-for SCRIPT in scripts/getpkg/*.sh
-do
-    bash "$SCRIPT"
-done
-mv ./*.deb assets/packages
+bash scripts/getpkg/sfizz.sh
 
 # GemFury
 for PACKAGE in assets/packages/*.deb
