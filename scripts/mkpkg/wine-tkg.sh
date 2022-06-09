@@ -26,7 +26,7 @@ cp\
 find . -name "*lutris-ge*" -print0|xargs -0 rm -rf
 WINE_GECKO_VER="$(wget -qO-\
     https://dl.winehq.org/wine/wine-gecko/|\
-    grep folder|cut -d '"' -f6|sort -g|tail -n1)"
+    grep folder|cut -d '"' -f6|sort -d|grep -v wine|tail -n1)"
 wget -qO-\
     https://dl.winehq.org/wine/wine-gecko/"$WINE_GECKO_VER"|\
     grep x86|grep tar|grep -wv pdb|cut -d '"' -f6\
