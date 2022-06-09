@@ -15,7 +15,7 @@ mv ./*.deb assets/packages
 # GemFury
 for PACKAGE in assets/packages/*.deb
 do
-    curl -F\
+    curl -sF\
         package=@"$PACKAGE"\
         https://"$GEMFURY_PUSH_TOKEN"@push.fury.io/rauldipeas/
 done
