@@ -23,8 +23,7 @@ cp\
 cp\
     lutris*/lib64/wine/x86_64-windows/winemenubuilder.exe\
     wine-tkg/opt/wine-tkg/lib/wine/x86_64-windows/winemenubuilder.exe
-sudo apt install -y fd-find
-fdfind lutris-ge --exec rm -rf {}
+find . -name "*lutris-ge*" -exec rm -rfv {} \;
 WINE_GECKO_VER="$(wget -qO-\
     https://dl.winehq.org/wine/wine-gecko/|\
     grep folder|cut -d '"' -f6|sort -g|tail -n1)"
