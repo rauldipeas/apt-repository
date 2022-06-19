@@ -18,15 +18,3 @@ jobs:
         env:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Send mail
-        if: always()
-        uses: dawidd6/action-send-mail@v2
-        with:
-          server_address: ${{ secrets.EMAIL_SERVER }}
-          server_port: ${{ secrets.EMAIL_SERVER_PORT }}
-          username: ${{ secrets.EMAIL_ADDRESS }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: GitHub Actions - APT repository
-          body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          to: ${{ secrets.EMAIL_ADDRESS }}
-          from: GitHub Actions <${{ secrets.EMAIL_ADDRESS }}>
