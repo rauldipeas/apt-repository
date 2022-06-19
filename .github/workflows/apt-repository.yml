@@ -14,8 +14,10 @@ jobs:
         run: |
           bash -x env.sh
           bash -x build.sh
+          bash -x actions-cleanup.sh
         env:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Send mail
         if: always()
         uses: dawidd6/action-send-mail@v2
