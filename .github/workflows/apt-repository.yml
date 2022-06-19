@@ -26,7 +26,7 @@ jobs:
           server_port: ${{secrets.EMAIL_SERVER_PORT}}
           username: ${{secrets.EMAIL_ADDRESS}}
           password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
+          subject: GitHub Actions - APT repository
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           to: ${{secrets.EMAIL_ADDRESS}}
           from: GitHub Actions <${{secrets.EMAIL_ADDRESS}}>
