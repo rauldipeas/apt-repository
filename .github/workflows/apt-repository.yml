@@ -1,5 +1,10 @@
 name: APT repository
-on: [ push ]
+on:
+  push:
+    branches:    
+      - 'main'
+  schedule:
+    - cron:  '0 */6 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
