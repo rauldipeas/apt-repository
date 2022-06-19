@@ -20,11 +20,11 @@ jobs:
         if: always()
         uses: dawidd6/action-send-mail@v2
         with:
-          server_address: disroot.org
-          server_port: 587
-          username: rauldipeas@disroot.org
+          server_address: ${{secrets.EMAIL_SERVER}}
+          server_port: ${{secrets.EMAIL_SERVER_PORT}}
+          username: ${{secrets.EMAIL_ADDRESS}}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          to: rauldipeas@disroot.org
+          to: ${{secrets.EMAIL_ADDRESS}}
           from: GitHub Actions
