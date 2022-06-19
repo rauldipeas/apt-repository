@@ -27,7 +27,7 @@ rm -rf\
 YABRIDGE_TAG="$(wget -qO-\
     https://api.github.com/repos/robbert-vdh/yabridge/releases|\
     grep tag|grep -v Next|head -n1|cut -d '"' -f4|\
-    sed 's/https:\/\/github.com\/robbert-vdh\/yabridge\/releases\/tag\///g')"
+    sed 's@https://github.com/robbert-vdh/yabridge/releases/tag/@@g')"
 cat <<EOF |tee yabridge/DEBIAN/control>/dev/null
 Package: yabridge
 Version: $YABRIDGE_TAG
