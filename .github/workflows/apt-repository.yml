@@ -22,11 +22,11 @@ jobs:
         if: always()
         uses: dawidd6/action-send-mail@v2
         with:
-          server_address: ${{secrets.EMAIL_SERVER}}
-          server_port: ${{secrets.EMAIL_SERVER_PORT}}
-          username: ${{secrets.EMAIL_ADDRESS}}
+          server_address: ${{ secrets.EMAIL_SERVER }}
+          server_port: ${{ secrets.EMAIL_SERVER_PORT }}
+          username: ${{ secrets.EMAIL_ADDRESS }}
           password: ${{ secrets.EMAIL_PASSWORD }}
           subject: GitHub Actions - APT repository
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
-          to: ${{secrets.EMAIL_ADDRESS}}
-          from: GitHub Actions <${{secrets.EMAIL_ADDRESS}}>
+          to: ${{ secrets.EMAIL_ADDRESS }}
+          from: GitHub Actions <${{ secrets.EMAIL_ADDRESS }}>
