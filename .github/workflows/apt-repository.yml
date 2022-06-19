@@ -27,4 +27,4 @@ jobs:
           subject: ${{ github.job }} job of ${{ github.repository }} has ${{ job.status }}
           body: ${{ github.job }} job in worflow ${{ github.workflow }} of ${{ github.repository }} has ${{ job.status }}
           to: ${{secrets.EMAIL_ADDRESS}}
-          from: GitHub Actions
+          from: GitHub Actions <${{secrets.EMAIL_ADDRESS}}>
