@@ -12,8 +12,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build
         run: |
-          bash env.sh
-          bash build.sh
+          bash -x env.sh
+          bash -x build.sh
         env:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
       - name: Send mail
