@@ -5,11 +5,9 @@ Meu repositório `apt` pessoal.
 [**Hospedagem:**](https://gemfury.com)
 
 Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
+
 ```bash
-echo \
-'deb [trusted=yes] https://rauldipeas.fury.site/apt/ * *'|\
-sudo tee \
-/etc/apt/sources.list.d/rauldipeas.list
+bash <(wget -qO- https://git.disroot.org/rauldipeas/apt-repository/raw/branch/main/apt-repository.sh)
 ```
 
 **Pacotes hospedados:**
