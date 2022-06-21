@@ -4,6 +4,7 @@ Meu repositório `apt` pessoal.
 
 [**Hospedagem:**](https://gemfury.com)
 
+Para adicionar este reposit�rio ao seu sistema, utilize os comandos abaixo:
 ```bash
 echo \
 'deb [trusted=yes] https://rauldipeas.fury.site/apt/ * *'|\
