@@ -1,6 +1,6 @@
 Meu repositório `apt` pessoal.
 
-[**Scripts**](https://git.disroot.org/rauldipeas/apt-repository)
+[**Código fonte** (scripts)](https://git.disroot.org/rauldipeas/apt-repository)
 
 [**Hospedagem:**](https://gemfury.com)
 
