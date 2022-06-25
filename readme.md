@@ -2,7 +2,7 @@ Meu repositório `apt` pessoal.
 
 [**Código fonte** (scripts)](https://git.disroot.org/rauldipeas/apt-repository)
 
-[**Hospedagem:**](https://gemfury.com)
+[**Hospedagem** (gemfury)](https://gemfury.com)
 
 Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
 
