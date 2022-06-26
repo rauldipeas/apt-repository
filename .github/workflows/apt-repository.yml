@@ -1,4 +1,4 @@
-name: APT repository
+name: Repositório APT
 on:
   push:
     branches:    
@@ -11,13 +11,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup environment
+      - name: Configuração do ambiente de compilação
         run: bash -x env.sh
-      - name: Build APT repository
-        run: bash -x build.sh
+      - name: Compilação do repositório APT
+        run: bash build.sh
         env:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
-      - name: Cleanup old logs
-        run: bash -x actions-cleanup.sh
+      - name: Limpeza de logs antigos
+        run: bash actions-cleanup.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

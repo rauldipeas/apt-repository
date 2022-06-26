@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+# Actions cleanup
 PROJECT='rauldipeas/apt-repository'
 KEEP=1
 gh api\
