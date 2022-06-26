@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/text-x-script.svg) [**Código fonte** (scripts)](https://github.org/rauldipeas/apt-repository)
+![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/text-x-script.svg) [**Código fonte** (scripts)](https://github.com/rauldipeas/apt-repository)
 
 ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/cs-login.svg) [**Hospedagem** (gemfury)](https://gemfury.com)
 
