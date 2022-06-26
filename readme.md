@@ -2,9 +2,9 @@
 
 ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/cs-login.svg) [**Hospedagem** (gemfury)](https://gemfury.com)
 
-Para adicionar este reposit�rio ao seu sistema, utilize o comando abaixo:
+Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
 ```
-bash <(wget -qO- https://git.disroot.org/rauldipeas/apt-repository/raw/branch/main/apt-repository.sh)
+bash <(wget -qO- https://github.com/rauldipeas/apt-repository/raw/branch/main/apt-repository.sh)
 ```
 #### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/application-x-compress.svg) Pacotes hospedados:
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/bitwarden.svg) [**Bitwarden**](https://bitwarden.com)
