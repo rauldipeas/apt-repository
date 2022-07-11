@@ -16,6 +16,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/gitqlient.svg) [**GitQlient**](https://github.com/francescmm/GitQlient)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/heroic.svg) [**Heroic**](https://heroicgameslauncher.com)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/internxt-drive.svg) [**Internxt**](https://internxt.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/utilities-x-terminal.svg) [**LSD**](https://github.com/Peltoche/lsd) [*(nerd-fonts-hack)*](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/lunacy.svg) [**Lunacy**](https://icons8.com.br/lunacy)
@@ -41,5 +42,5 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 
 #### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/gnome-todo.svg) Por fazer:
 
-- [ ] ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/16x16/apps/password-manager.svg) [*Aviso* do `apt` de `chave GPG` *faltando*](https://github.com/gemfury/gemfury/issues/87#issuecomment-1152661434)
-    >***W:*** *Erro GPG: `https://rauldipeas.fury.site/apt *` InRelease: As assinaturas a seguir não puderam ser verificadas devido à chave pública não estar dispoível: `NO_PUBKEY 8686500724C20FBE`*
+- [x] ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/16x16/apps/password-manager.svg) [~~*Aviso* do `apt` de `chave GPG` *faltando*~~](https://github.com/gemfury/gemfury/issues/87#issuecomment-1152661434)
+    >~~***W:*** *Erro GPG: `https://rauldipeas.fury.site/apt *` InRelease: As assinaturas a seguir não puderam ser verificadas devido à chave pública não estar dispoível: `NO_PUBKEY 8686500724C20FBE`*~~
