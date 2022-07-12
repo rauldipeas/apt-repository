@@ -27,6 +27,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rclone-browser.svg) [**RClone**](https://rclone.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rclonetray.svg) [**RCloneTray**](https://github.com/dimitrov-adrian/RcloneTray)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/cockos-reaper.svg) [**REAPER**](https://reaper.fm)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/places/user-trash.svg) [**RMTrash**](https://github.com/PhrozenByte/rmtrash)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**Sfizz**](https://sfz.tools/sfizz)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/instagram.svg) [**StreamOn**](https://getstreamon.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/stremio.svg) [**Stremio**](https://stremio.com) [*(libfdk-aac1)*](http://ftp.debian.org/debian/pool/non-free/f/fdk-aac)
