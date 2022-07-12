@@ -9,5 +9,5 @@ makedeb -s
 cd ..
 cp\
     rmtrash/rmtrash*.deb\
-    kubuntu-custom/assets/packages/
+    assets/packages/
 rm -rf rmtrash*
