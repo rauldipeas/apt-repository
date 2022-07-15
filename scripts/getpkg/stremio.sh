@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 # Stremio
-rm -rf\
-	libfdk-aac1*.deb\
-	stremio*.deb
 aria2c --console-log-level=error --summary-interval=0\
 	http://ftp.debian.org/debian/pool/non-free/f/fdk-aac/\
 "$(wget -qO-\

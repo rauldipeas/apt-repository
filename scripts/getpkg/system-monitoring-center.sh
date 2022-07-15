@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 # System Monitoring Center
-rm -rf system-monitoring-center*.deb
 aria2c --console-log-level=error --summary-interval=0\
 	"$(wget -qO-\
 	https://api.github.com/repos/hakandundar34coding/system-monitoring-center/releases|\

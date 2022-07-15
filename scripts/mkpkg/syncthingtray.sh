@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 # SyncThing Tray #TODO
-rm -rf syncthingtray*
 aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
     https://api.github.com/repos/Martchus/syncthingtray/releases|\

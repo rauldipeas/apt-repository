@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 # RClone
-rm -rf rclone*.deb
 aria2c --console-log-level=error --summary-interval=0\
 	"$(wget -qO-\
 	https://api.github.com/repos/dimitrov-adrian/RcloneTray/releases|\

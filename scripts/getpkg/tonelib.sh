@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 # ToneLib
-rm -rf ToneLib*.deb
 aria2c --console-log-level=error --summary-interval=0\
 	https://tonelib.net/download/ToneLib-BassDrive-amd64.deb
 aria2c --console-log-level=error --summary-interval=0\

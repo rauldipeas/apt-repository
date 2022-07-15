@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 # Fluent Reader #TODO
-rm -rf fluent-reader-bin*
 git clone -q\
     https://aur.archlinux.org/fluent-reader-bin.git
 cd fluent-reader-bin

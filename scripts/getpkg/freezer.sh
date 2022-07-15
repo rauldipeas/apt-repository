@@ -1,9 +1,6 @@
 #!/bin/bash
 set -e
 # Freezer
-rm -rf\
-	freezer*.deb\
-	libssl1.1*.deb
 aria2c --console-log-level=error --summary-interval=0\
 	http://security.ubuntu.com/ubuntu/pool/main/o/openssl/"$(\
 	wget -qO-\
