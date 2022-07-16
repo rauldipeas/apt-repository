@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Configuração do ambiente de compilação
-        run: bash -x env.sh
+        run: bash env.sh
       - name: Compilação do repositório APT
         run: bash build.sh
         env:
