@@ -20,6 +20,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/utilities-x-terminal.svg) [**LSD**](https://github.com/Peltoche/lsd) [*(nerd-fonts-hack)*](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/lunacy.svg) [**Lunacy**](https://icons8.com.br/lunacy)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/obsidian.svg) [**Obsidian**](obsidian.md)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/obs.svg) [**OBS multi RTMP**](https://sorayuki.github.io/obs-multi-rtmp)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/kmenuedit.svg) [**Plasma HUD**](https://github.com/Zren/plasma-hud)
