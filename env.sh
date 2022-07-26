@@ -34,5 +34,6 @@ wget -qO-\
     /etc/apt/trusted.gpg.d/makedeb-archive-keyring.gpg\
     >/dev/null
 sudo dpkg --add-architecture i386
-sudo apt update
+sudo add-apt-repository -n multiverse
+sudo add-apt-repository universe
 sudo apt install -y makedeb
