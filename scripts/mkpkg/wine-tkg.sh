@@ -71,9 +71,9 @@ tar xf\
 rm -rf wine-gecko-*-x86.tar.xz
 rm -rf wine-gecko-*-x86_64.tar.xz
 rm -rf wine-mono-*-x86.tar.xz
-WINE_TKG_TAG=$(wget -qO-\
+WINE_TKG_TAG="$(wget -qO-\
     https://api.github.com/repos/Kron4ek/Wine-Builds/tags|\
-    grep name|head -n1|cut -d '"' -f4)
+    grep name|head -n1|cut -d '"' -f4)"
 cat <<EOF |tee wine-tkg/DEBIAN/control>/dev/null
 Package: wine-tkg
 Version: $WINE_TKG_TAG

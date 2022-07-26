@@ -28,8 +28,8 @@ EOF
 wget -q\
 	https://upload.wikimedia.org/wikipedia/commons/8/83/SyncthingAugustLogo.png\
 	-O syncthingtray/usr/share/pixmaps/syncthing.png
-SYNCTHINGTRAY_TAG=$(wget -qO- https://api.github.com/repos/Martchus/syncthingtray/releases|\
-	grep tag|head -n1|cut -d '"' -f4|sed 's@https://github.com/Martchus/syncthingtray/releases/tag/v@@g')
+SYNCTHINGTRAY_TAG="$(wget -qO- https://api.github.com/repos/Martchus/syncthingtray/releases|\
+	grep tag|head -n1|cut -d '"' -f4|sed 's@https://github.com/Martchus/syncthingtray/releases/tag/v@@g')"
 cat <<EOF |tee syncthingtray/DEBIAN/control>/dev/null
 Package: syncthingtray
 Version: $SYNCTHINGTRAY_TAG
