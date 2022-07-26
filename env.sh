@@ -36,4 +36,4 @@ wget -qO-\
 sudo dpkg --add-architecture i386
 sudo add-apt-repository -n multiverse
 sudo add-apt-repository universe
-sudo apt install -y makedeb
+sudo apt install -y containerd makedeb
