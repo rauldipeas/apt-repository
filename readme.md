@@ -20,6 +20,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/heroic.svg) [**Heroic**](https://heroicgameslauncher.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/internxt-drive.svg) [**Internxt**](https://internxt.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/joplin.svg) [**Joplin**](https://joplinapp.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/utilities-x-terminal.svg) [**LSD**](https://github.com/Peltoche/lsd) [*(nerd-fonts-hack)*](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Hack)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/lunacy.svg) [**Lunacy**](https://icons8.com.br/lunacy)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
