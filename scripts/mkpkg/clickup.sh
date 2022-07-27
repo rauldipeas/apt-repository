@@ -3,7 +3,7 @@ set -e
 # ClickUp #TODO
 git clone -q\
     https://aur.archlinux.org/clickup.git
-cd fluent-reader-bin
+cd clickup
 sed -i\
     "s/depends=('gtk3' 'libindicator-gtk2' 'dbus-glib' 'alsa-lib' 'libdbusmenu-gtk2' 'nss')//g"\
     PKGBUILD
