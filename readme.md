@@ -29,6 +29,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/obsidian.svg) [**Obsidian**](obsidian.md)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/obs.svg) [**OBS multi RTMP**](https://sorayuki.github.io/obs-multi-rtmp)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/peazip.svg) [**PeaZip**](https://peazip.github.io)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/kmenuedit.svg) [**Plasma HUD**](https://github.com/Zren/plasma-hud)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rambox.svg) [**Rambox**](https://rambox.app)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rclone-browser.svg) [**RClone**](https://rclone.org)
