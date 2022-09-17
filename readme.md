@@ -10,7 +10,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/bitwarden.svg) [**Bitwarden**](https://bitwarden.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/bluemail.svg) [**BlueMail**](https://www.bluemail.me)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/indicator-cpufreq.svg) [**CFS Zen tweaks**](https://github.com/igo95862/cfs-zen-tweaks)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/clickup-desktop.svg) [**ClickUp**](https://clickup.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/clockify.svg) [**Clockify**](https://clockify.me)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/discord.svg) [**Discord**](https://discord.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ferdium.svg) [**Ferdium**](https://ferdium.org)
