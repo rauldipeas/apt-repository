@@ -90,6 +90,7 @@ if [ -d "/opt/wine-tkg/bin" ] ; then
     PATH="/opt/wine-tkg/bin:\$PATH"
 fi
 export WINE_ENABLE_PIPE_SYNC_FOR_APP=1
+export WINEFSYNC_FUTEX2=1
 export WINEFSYNC=1
 EOF
 dpkg-deb -b wine-tkg .
