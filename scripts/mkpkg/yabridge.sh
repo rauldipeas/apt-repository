@@ -31,7 +31,7 @@ YABRIDGE_TAG="$(wget -qO-\
 cat <<EOF |tee yabridge/DEBIAN/control>/dev/null
 Package: yabridge
 Version: $YABRIDGE_TAG
-Depends: wine-tkg
+Depends: dxvk, wine-tkg
 Section: audio
 Priority: optional
 Architecture: amd64
