@@ -7,7 +7,6 @@ Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
 bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/main/apt-repository.sh)
 ```
 #### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/application-x-compress.svg) Pacotes hospedados:
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/bitwarden.svg) [**Bitwarden**](https://bitwarden.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/indicator-cpufreq.svg) [**CFS Zen tweaks**](https://github.com/igo95862/cfs-zen-tweaks)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ferdium.svg) [**Ferdium**](https://ferdium.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
@@ -29,6 +28,9 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/utilities-system-monitor.svg) [**System monitoring center**](https://github.com/hakandundar34coding/system-monitoring-center)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib BassDrive**](https://tonelib.net/tl-bassdrive.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-GFX.svg) [**ToneLib GFX**](https://tonelib.net/gfx-overview.html)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-Jam.svg) [**ToneLib Jam**](https://tonelib.net/jam-overview.html)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib Metal**](https://tonelib.net/tonelib-metal.html)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib Noise Reducer**](https://tonelib.net/meet-tl-noisereducer.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib TubeWarmth**](https://tonelib.net/tl-tubewarmth.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-Zoom.svg) [**ToneLib Zoom**](https://tonelib.net/tonelib-zoom.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/com.github.joseexposito.touche.svg) [**Touche**](https://github.com/JoseExposito/touche)
