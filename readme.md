@@ -36,7 +36,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/com.github.joseexposito.touche.svg) [**Touche**](https://github.com/JoseExposito/touche)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/wine.svg) [**WINE TkG**](https://github.com/Kron4ek/Wine-Builds)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**yabridge**](https://github.com/robbert-vdh/yabridge)
-
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/zerotier-gui.svg) [**ZeroTier GUI**](https://github.com/tralph3/ZeroTier-GUI)
 #### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/gnome-todo.svg) Por fazer:
 
 - [x] ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/16x16/apps/password-manager.svg) [~~*Aviso* do `apt` de `chave GPG` *faltando*~~](https://github.com/gemfury/gemfury/issues/87#issuecomment-1152661434)
