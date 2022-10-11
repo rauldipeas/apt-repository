@@ -7,6 +7,6 @@ cd ZeroTier-GUI
 ./make_deb.sh
 cd ..
 cp \
-    ZeroTier-GUI/packaging/ZeroTier-GUI.deb\
+    ZeroTier-GUI/ZeroTier-GUI.deb\
     assets/packages/
 rm -rf ZeroTier-GUI*
