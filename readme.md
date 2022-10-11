@@ -30,7 +30,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-GFX.svg) [**ToneLib GFX**](https://tonelib.net/gfx-overview.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-Jam.svg) [**ToneLib Jam**](https://tonelib.net/jam-overview.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib Metal**](https://tonelib.net/tonelib-metal.html)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib Noise Reducer**](https://tonelib.net/meet-tl-noisereducer.html)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib NoiseReducer**](https://tonelib.net/meet-tl-noisereducer.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/preferences-plugin.svg) [**ToneLib TubeWarmth**](https://tonelib.net/tl-tubewarmth.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ToneLib-Zoom.svg) [**ToneLib Zoom**](https://tonelib.net/tonelib-zoom.html)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/com.github.joseexposito.touche.svg) [**Touche**](https://github.com/JoseExposito/touche)

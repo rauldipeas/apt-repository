@@ -10,7 +10,7 @@ aria2c --console-log-level=error --summary-interval=0\
 aria2c --console-log-level=error --summary-interval=0\
 	https://tonelib.net/download/ToneLib-Metal-amd64.deb
 aria2c --console-log-level=error --summary-interval=0\
-	https://tonelib.net/download/ToneLib-Noise-Reducer-amd64.deb
+	https://www.tonelib.net/download/ToneLib-NoiseReducer-amd64.deb
 aria2c --console-log-level=error --summary-interval=0\
 	https://tonelib.net/download/ToneLib-TubeWarmth-amd64.deb
 aria2c --console-log-level=error --summary-interval=0\
