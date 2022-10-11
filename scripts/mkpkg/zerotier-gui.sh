@@ -5,7 +5,7 @@ git clone -q\
     https://github.com/tralph3/ZeroTier-GUI
 cd ZeroTier-GUI
 ./make_deb.sh
-de ..
+cd ..
 cp \
     ZeroTier-GUI/packaging/ZeroTier-GUI.deb\
     assets/packages/
