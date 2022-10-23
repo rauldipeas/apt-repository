@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Configuração do ambiente de compilação
-        run: bash env.sh
+        run: bash scripts/env.sh
       - name: Compilação do repositório APT
-        run: bash build.sh
+        run: bash scripts/build.sh
         env:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
       - name: Limpeza de logs antigos
-        run: bash actions-cleanup.sh
+        run: bash scripts/actions-cleanup.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
