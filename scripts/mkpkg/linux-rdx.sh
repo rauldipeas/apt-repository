@@ -25,8 +25,7 @@ Maintainer: Raul Dipeas <rauldipeas@disroot.org>
 Depends: linux-image-rdx (= $META_VERSION-rdx-1), linux-headers-rdx (= $META_VERSION-rdx-1)
 Section: kernel
 Priority: optional
-Description: Vanilla Linux kernel
- Este pacote contém uma versão sem modificações do kernel Linux, apenas com patches de correções para o meu hardware pessoal.
+Description: Este pacote contém uma versão sem modificações do kernel Linux, apenas com patches de correções para o meu hardware pessoal.
 EOF
 dpkg-deb -b meta-rdx .
 rm -rf meta-rdx repack-*

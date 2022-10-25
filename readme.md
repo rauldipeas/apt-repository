@@ -18,7 +18,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/obs.svg) [**OBS multi RTMP**](https://sorayuki.github.io/obs-multi-rtmp)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/kmenuedit.svg) [**Plasma HUD**](https://github.com/Zren/plasma-hud)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rclone-browser.svg) [**RClone**](https://rclone.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/rclonetray.svg) [**RCloneTray**](https://github.com/dimitrov-adrian/RcloneTray)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/cockos-reaper.svg) [**REAPER**](https://reaper.fm)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/places/user-trash.svg) [**rmtrash**](https://github.com/PhrozenByte/rmtrash)
