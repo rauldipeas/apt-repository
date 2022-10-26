@@ -1,5 +1,6 @@
 #!/bin/bash
 set -e
+# Linux RDX
 aria2c --console-log-level=error --summary-interval=0\
     https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
 unzip linux-rdx.zip
