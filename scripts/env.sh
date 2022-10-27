@@ -18,9 +18,6 @@ sudo rm -rf\
     /swapfile\
     /usr/share/dotnet\
     /usr/local/share/boost
-sudo sed -i\
-    's/focal/jammy/g'\
-    /etc/apt/sources.list
 sudo rm -rfv\
     /etc/apt/sources.list.d/*.list
 sudo add-apt-repository -y ppa:kisak/kisak-mesa
