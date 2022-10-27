@@ -12,7 +12,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/heroic.svg) [**Heroic**](https://heroicgameslauncher.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/joplin.svg) [**Joplin**](https://joplinapp.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/devices/cpu.svg) [**Linux RDX**](https://github.com/rauldipeas/linux-rdx)
 
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
