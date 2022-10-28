@@ -1,12 +1,12 @@
-![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/text-x-script.svg) [**Código fonte** (scripts)](https://github.com/rauldipeas/apt-repository)
+Este é o meu repositório `apt` pessoal, que reúne pacotes que não estão disponíveis em nenhum outro repositório e também compilações próprias, feitas diretamente do código fonte.
 
-![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/cs-login.svg) [**Hospedagem** (gemfury)](https://gemfury.com)
+Os pacotes deste repositório estão hospedados no [**Gemfury**](https://gemfury.com).
 
 Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/main/apt-repository.sh)
 ```
-#### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/mimetypes/application-x-compress.svg) Pacotes hospedados:
+## ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/mimetypes/application-x-compress.svg) Pacotes hospedados:
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/devices/cpu.svg) [**CFS Zen tweaks**](https://github.com/igo95862/cfs-zen-tweaks)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ferdium.svg) [**Ferdium**](https://ferdium.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
