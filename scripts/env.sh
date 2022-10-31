@@ -11,24 +11,14 @@ sudo apt autoremove --purge -y\
     snapd
 sudo apt clean
 sudo swapoff -a
-sudo rm -rf\
+sudo rm -r\
     "$AGENT_TOOLSDIRECTORY"\
     /opt/az\
-    /swapfile\
-    /usr/share/dotnet\
-    /usr/local/share/boost
-sudo rm -rfv\
-    /etc/apt/sources.list.d/*.list
+    /usr/share/dotnet
+sudo rm -r /etc/apt/sources.list.d/*.list
 sudo add-apt-repository -y ppa:kisak/kisak-mesa
-echo\
-    'deb [arch=all] https://proget.hunterwittenborn.com makedeb main'|\
-    sudo tee\
-    /etc/apt/sources.list.d/makedeb.list
-wget -qO-\
-    'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub'|\
-    sudo gpg --dearmor -o\
-    /etc/apt/trusted.gpg.d/makedeb-archive-keyring.gpg\
-    >/dev/null
+echo 'deb [arch=all] https://proget.hunterwittenborn.com makedeb main'|sudo tee /etc/apt/sources.list.d/makedeb.list>/dev/null
+wget -qO- 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub'|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/makedeb-archive-keyring.gpg>/dev/null
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install -y makedeb

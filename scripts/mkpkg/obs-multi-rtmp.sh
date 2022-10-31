@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 # OBS multi RTMP #TODO
-git clone -q\
-	https://aur.archlinux.org/obs-multi-rtmp.git
+git clone -q https://aur.archlinux.org/obs-multi-rtmp.git
 cd obs-multi-rtmp
 sudo apt install -y\
 	cmake\
@@ -10,7 +9,5 @@ sudo apt install -y\
 	qtbase5-dev
 makedeb -d
 cd ..
-cp\
-	obs-multi-rtmp/obs-multi-rtmp*.deb\
-	assets/packages/
-rm -rf obs-multi-rtmp
+cp obs-multi-rtmp/obs-multi-rtmp*.deb assets/packages/
+rm -r obs-multi-rtmp

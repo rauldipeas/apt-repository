@@ -5,25 +5,13 @@ aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
         https://api.github.com/repos/robbert-vdh/yabridge/releases|\
         grep browser_download_url|grep download|head -n2|tail -n1|cut -d '"' -f4)"
-tar fxz\
-    yabridge*.tar.gz
-rm -rf\
-    yabridge*.tar.gz
-mkdir -p\
-    yabridge/DEBIAN\
-    yabridge/usr/{bin,lib}
-mv\
-    yabridge/yabridgectl\
-    yabridge/usr/bin/yabridgectl
-mv\
-    yabridge/libyabridge*\
-    yabridge/usr/lib/
-mv\
-    yabridge/yabridge*\
-    yabridge/usr/bin/
-rm -rf\
-    yabridge/README.md\
-    yabridge/CHANGELOG.md
+tar fxz yabridge*.tar.gz
+rm -r yabridge*.tar.gz
+mkdir -p yabridge/DEBIAN yabridge/usr/{bin,lib}
+mv yabridge/yabridgectl yabridge/usr/bin/yabridgectl
+mv yabridge/libyabridge* yabridge/usr/lib/
+mv yabridge/yabridge* yabridge/usr/bin/
+rm -r yabridge/README.md yabridge/CHANGELOG.md
 YABRIDGE_TAG="$(wget -qO-\
     https://api.github.com/repos/robbert-vdh/yabridge/releases|\
     grep tag|grep -v Next|head -n1|cut -d '"' -f4|\
@@ -40,4 +28,4 @@ Description: Yet Another way to use Windows VST plugins on Linux. Yabridge seaml
 EOF
 dpkg-deb -b yabridge .
 mv yabridge*.deb assets/packages
-rm -rf yabridge*
+rm -r yabridge*

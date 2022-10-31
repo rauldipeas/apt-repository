@@ -1,11 +1,8 @@
 #!/bin/bash
 set -e
 # REAPER
-REAPER_VER="$(wget -qO-\
-    http://reaper.fm|\
-    grep VERSION|cut -d '>' -f2|cut -d ':' -f1|sed 's/VERSION //g')"
-mkdir -p\
-    cockos-reaper/DEBIAN
+REAPER_VER="$(wget -qO- http://reaper.fm| grep VERSION|cut -d '>' -f2|cut -d ':' -f1|sed 's/VERSION //g')"
+mkdir -p cockos-reaper/DEBIAN
 cat <<EOF |tee cockos-reaper/DEBIAN/control>/dev/null
 Package: cockos-reaper
 Version: $REAPER_VER
@@ -21,27 +18,16 @@ Description: REAPER is a complete digital audio production application for Windo
 EOF
 cat <<EOF |tee cockos-reaper/DEBIAN/preinst>/dev/null
 cd /tmp
-rm -rf\
-    /tmp/*reaper*\
-    /tmp/*libSwell*
-aria2c --console-log-level=error --summary-interval=0\
-    http://reaper.fm/"\$(wget -qO-\
-        http://reaper.fm/download.php|\
-        grep _linux_x86_64.tar.xz|cut -d '"' -f2)"
-tar fx\
-    reaper*_linux_x86_64.tar.xz\
-    -C /tmp
-sed -i\
-    's/rmdir --/rm -rf --/g'\
-    /tmp/reaper*/install-reaper.sh
+rm -rf /tmp/*reaper* /tmp/*libSwell*
+aria2c --console-log-level=error --summary-interval=0 http://reaper.fm/"\$(wget -qO- http://reaper.fm/download.php|grep _linux_x86_64.tar.xz|cut -d '"' -f2)"
+tar fx reaper*_linux_x86_64.tar.xz -C /tmp
+sed -i 's/rmdir --/rm -rf --/g' /tmp/reaper*/install-reaper.sh
 /tmp/reaper*/install-reaper.sh\
     --install /opt\
     --integrate-desktop\
     --quiet\
     --integrate-sys-desktop
-wget -qO\
-    libSwell.colortheme\
-    https://stash.reaper.fm/41334/libSwell.colortheme
+wget -qO libSwell.colortheme https://stash.reaper.fm/41334/libSwell.colortheme
 mv libSwell.colortheme /opt/REAPER/libSwell.colortheme
 echo "
 Actions=NewProject;ShowAudioConfig;ReaMote;WhatsNew;License;
@@ -70,16 +56,14 @@ Name[pt_BR]=Licença e contrato de usuário
 Exec=xdg-open /opt/REAPER/EULA.txt
 Icon=text-x-plain">>/usr/share/applications/cockos-reaper.desktop
 EOF
-chmod +x\
-    cockos-reaper/DEBIAN/preinst
+chmod +x cockos-reaper/DEBIAN/preinst
 cat <<EOF |tee cockos-reaper/DEBIAN/prerm>/dev/null
 rm -rf /opt/REAPER /usr/share/applications/cockos-reaper*
 find /usr/share/applications -name *cockos-reaper* -delete
 find /usr/share/icons/hicolor -name *cockos-reaper* -delete
 find /usr/share/ -name *x-reaper* -delete
 EOF
-chmod +x\
-    cockos-reaper/DEBIAN/prerm
+chmod +x cockos-reaper/DEBIAN/prerm
 dpkg-deb -b cockos-reaper .
 mv cockos-reaper*.deb assets/packages
-rm -rf cockos-reaper*
+rm -r cockos-reaper*
