@@ -4,7 +4,7 @@ set -e
 aria2c --console-log-level=error --summary-interval=0\
     https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
 unzip linux-rdx.zip
-rm -r linux-libc-dev_*_amd64.deb linux-image-*-dbg_*_amd64.deb linux-rdx.zip
+rm linux-libc-dev_*_amd64.deb linux-rdx.zip
 dpkg-deb -x linux-image-*-rdx_*_amd64.deb repack-image
 dpkg-deb -e linux-image-*-rdx_*_amd64.deb repack-image/DEBIAN
 rm linux-image-*-rdx_*_amd64.deb
