@@ -8,7 +8,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 ```
 ## ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/mimetypes/application-x-compress.svg) Pacotes hospedados:
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/devices/cpu.svg) [**CFS Zen tweaks**](https://github.com/igo95862/cfs-zen-tweaks)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/ferdium.svg) [**Ferdium**](https://ferdium.org)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/heroic.svg) [**Heroic**](https://heroicgameslauncher.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/24x24/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
