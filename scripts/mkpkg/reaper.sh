@@ -54,7 +54,7 @@ Icon=text-x-plain
 Name=License and User Agreement
 Name[pt_BR]=Licença e contrato de usuário
 Exec=xdg-open /opt/REAPER/EULA.txt
-Icon=text-x-plain">>/usr/share/applications/cockos-reaper.desktop
+Icon=text-x-plain">>/usr/local/share/applications/cockos-reaper.desktop
 EOF
 chmod +x cockos-reaper/DEBIAN/preinst
 cat <<EOF |tee cockos-reaper/DEBIAN/prerm>/dev/null
