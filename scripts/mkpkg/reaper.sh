@@ -58,10 +58,12 @@ Icon=text-x-plain">>/usr/local/share/applications/cockos-reaper.desktop
 EOF
 chmod +x cockos-reaper/DEBIAN/preinst
 cat <<EOF |tee cockos-reaper/DEBIAN/prerm>/dev/null
-rm -rf /opt/REAPER /usr/share/applications/cockos-reaper*
 find /usr/share/applications -name *cockos-reaper* -delete
+find /usr/local/share/applications -name *cockos-reaper* -delete
 find /usr/share/icons/hicolor -name *cockos-reaper* -delete
+find /usr/local/share/icons/hicolor -name *cockos-reaper* -delete
 find /usr/share/ -name *x-reaper* -delete
+find /usr/local/share/ -name *x-reaper* -delete
 EOF
 chmod +x cockos-reaper/DEBIAN/prerm
 dpkg-deb -b cockos-reaper .
