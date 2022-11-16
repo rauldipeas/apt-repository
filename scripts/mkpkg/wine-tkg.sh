@@ -6,14 +6,14 @@ aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
         https://api.github.com/repos/Kron4ek/Wine-Builds/releases|\
         grep browser_download_url|grep staging-tkg-amd64.tar.xz|head -n1|cut -d '"' -f4)"
-tar -xf wine*staging-tkg-amd64.tar.xz
+tar fx wine*staging-tkg-amd64.tar.xz
 rm wine*staging-tkg-amd64.tar.xz
 mv wine*staging-tkg-amd64 wine-tkg/opt/wine-tkg
 aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
         https://api.github.com/repos/GloriousEggroll/wine-ge-custom/releases|\
         grep browser_download_url|grep download|grep wine-lutris-ge|grep .tar.xz|head -n1|cut -d '"' -f4)"
-tar -xf wine-lutris-ge*.tar.xz
+tar fx wine-lutris-ge*.tar.xz
 cp lutris*/lib/wine/i386-windows/winemenubuilder.exe wine-tkg/opt/wine-tkg/lib/wine/i386-windows/winemenubuilder.exe
 cp lutris*/lib64/wine/x86_64-windows/winemenubuilder.exe wine-tkg/opt/wine-tkg/lib/wine/x86_64-windows/winemenubuilder.exe
 find . -name "*lutris-ge*" -print0|xargs -0 rm -r
@@ -31,9 +31,9 @@ sed -i 's@wine/wine-mono/@'wine/wine-mono/"$WINE_MONO_VER"'@g' wine-mono.links
 aria2c --console-log-level=error --summary-interval=0 "$(cat<wine-mono.links|head -n1)"
 rm wine-mono.links
 mkdir -p wine-tkg/opt/wine-tkg/share/wine/{gecko,mono}
-tar xf wine-gecko-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/gecko/
-tar xf wine-gecko-*-x86_64.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/gecko/
-tar xf wine-mono-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/mono/
+tar fx wine-gecko-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/gecko/
+tar fx wine-gecko-*-x86_64.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/gecko/
+tar fx wine-mono-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/mono/
 rm -r wine-gecko-*-x86.tar.xz
 rm -r wine-gecko-*-x86_64.tar.xz
 rm -r wine-mono-*-x86.tar.xz
