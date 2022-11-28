@@ -16,6 +16,7 @@ apt-fast install -y\
     libxrandr-dev\
     libxrender-dev\
     libxxf86vm-dev
+sed -i 's/steamdeck/gamepadui/g' usr/bin/steamos-session
 dpkg-buildpackage -b -us -uc
 cd ..
 mv steamos-compositor-plus*.deb assets/packages
