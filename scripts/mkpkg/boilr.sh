@@ -7,6 +7,7 @@ wget -q --show-progress\
         grep browser_download_url|grep download|head -n1|cut -d '"' -f4)"
 mkdir -p boilr/DEBIAN boilr/usr/{bin,share/applications,share/pixmaps}
 mv linux_BoilR boilr/usr/bin/boilr
+chmod +x boilr/usr/share/bin/boilr
 wget -q --show-progress\
     https://raw.githubusercontent.com/PhilipK/BoilR/main/resources/256/io.github.philipk.boilr.png
 mv io.github.philipk.boilr.png boilr/usr/share/pixmaps/boilr.png
