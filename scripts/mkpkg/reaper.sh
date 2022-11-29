@@ -19,7 +19,7 @@ EOF
 cat <<EOF |tee cockos-reaper/DEBIAN/preinst>/dev/null
 cd /tmp
 rm -rf /tmp/*reaper* /tmp/*libSwell*
-aria2c --console-log-level=error --summary-interval=0 http://reaper.fm/"\$(wget -qO- http://reaper.fm/download.php|grep _linux_x86_64.tar.xz|cut -d '"' -f2)"
+wget -q --show-progress http://reaper.fm/"\$(wget -qO- http://reaper.fm/download.php|grep _linux_x86_64.tar.xz|cut -d '"' -f2)"
 tar fx reaper*_linux_x86_64.tar.xz -C /tmp
 sed -i 's/rmdir --/rm -rf --/g' /tmp/reaper*/install-reaper.sh
 /tmp/reaper*/install-reaper.sh\

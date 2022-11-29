@@ -2,14 +2,14 @@
 set -e
 # WINE
 mkdir -p wine-tkg/{DEBIAN,etc/X11/Xsession.d,opt}
-aria2c --console-log-level=error --summary-interval=0\
+wget -q --show-progress\
     "$(wget -qO-\
         https://api.github.com/repos/Kron4ek/Wine-Builds/releases|\
         grep browser_download_url|grep staging-tkg-amd64.tar.xz|grep -v 7.21|head -n1|cut -d '"' -f4)"
 tar fx wine*staging-tkg-amd64.tar.xz
 rm wine*staging-tkg-amd64.tar.xz
 mv wine*staging-tkg-amd64 wine-tkg/opt/wine-tkg
-aria2c --console-log-level=error --summary-interval=0\
+wget -q --show-progress\
     "$(wget -qO-\
         https://api.github.com/repos/GloriousEggroll/wine-ge-custom/releases|\
         grep browser_download_url|grep download|grep wine-lutris-ge|grep .tar.xz|head -n1|cut -d '"' -f4)"
@@ -21,14 +21,14 @@ WINE_GECKO_VER="$(wget -qO- https://dl.winehq.org/wine/wine-gecko/|grep folder|c
 wget -qO- https://dl.winehq.org/wine/wine-gecko/"$WINE_GECKO_VER"|grep x86|grep tar|grep -wv pdb|cut -d '"' -f6>wine-gecko.links
 sed -i 's@wine-gecko@https://dl.winehq.org/wine/wine-gecko/wine-gecko@g' wine-gecko.links
 sed -i 's@wine/wine-gecko/@'wine/wine-gecko/"$WINE_GECKO_VER"'@g' wine-gecko.links
-aria2c --console-log-level=error --summary-interval=0 "$(cat<wine-gecko.links|head -n1)"
-aria2c --console-log-level=error --summary-interval=0 "$(cat<wine-gecko.links|tail -n1)"
+wget -q --show-progress "$(cat<wine-gecko.links|head -n1)"
+wget -q --show-progress "$(cat<wine-gecko.links|tail -n1)"
 rm wine-gecko.links
 WINE_MONO_VER="$(wget -qO- https://dl.winehq.org/wine/wine-mono/|grep folder|cut -d '"' -f6|sort -g|tail -n1)"
 wget -qO- https://dl.winehq.org/wine/wine-mono/"$WINE_MONO_VER"|grep x86|grep tar|cut -d '"' -f6>wine-mono.links
 sed -i 's@wine-mono@https://dl.winehq.org/wine/wine-mono/wine-mono@g' wine-mono.links
 sed -i 's@wine/wine-mono/@'wine/wine-mono/"$WINE_MONO_VER"'@g' wine-mono.links
-aria2c --console-log-level=error --summary-interval=0 "$(cat<wine-mono.links|head -n1)"
+wget -q --show-progress "$(cat<wine-mono.links|head -n1)"
 rm wine-mono.links
 mkdir -p wine-tkg/opt/wine-tkg/share/wine/{gecko,mono}
 tar fx wine-gecko-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/gecko/

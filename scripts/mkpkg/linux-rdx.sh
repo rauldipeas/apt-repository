@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Linux RDX
-aria2c --console-log-level=error --summary-interval=0\
+wget -q --show-progress\
     https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
 unzip linux-rdx.zip
 rm linux-libc-dev_*_amd64.deb linux-rdx.zip
