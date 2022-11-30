@@ -27,7 +27,7 @@ BOILR_TAG="$(wget -qO-\
 cat <<EOF |tee boilr/DEBIAN/control>/dev/null
 Package: boilr
 Version: $BOILR_TAG
-Depends: steam
+Depends: steam|steam-launcher
 Section: game
 Priority: optional
 Architecture: amd64
