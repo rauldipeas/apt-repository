@@ -1,0 +1,6 @@
+remote_theme: rauldipeas/hacker
+plugins:
+- jekyll-remote-theme
+title: Repositório APT
+description:  Meu repositório APT pessoal
+favicon: https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/distributor-logo-debian.svg
