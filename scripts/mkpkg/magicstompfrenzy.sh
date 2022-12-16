@@ -5,8 +5,8 @@ git clone -q https://github.com/dulnikovsky/magicstompfrenzy magicstompfrenzy-so
 cd magicstompfrenzy-source
 mkdir build
 cd build
-qmake ../MagicStompFrenzy.pro
 sudo apt install libasound2-dev qt5-qmake
+qmake ../MagicStompFrenzy.pro
 make
 cd ../..
 mkdir -p magicstompfrenzy/{DEBIAN,usr/bin,usr/share/applications,usr/share/pixmaps}
