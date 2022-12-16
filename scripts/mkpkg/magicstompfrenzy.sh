@@ -13,7 +13,7 @@ mkdir -p magicstompfrenzy/{DEBIAN,usr/bin,usr/share/applications,usr/share/pixma
 mv magicstompfrenzy-source/build/MagicstompFrenzy magicstompfrenzy/usr/bin/
 wget -q --show-progress\
     -O magicstompfrenzy/usr/share/pixmaps/magicstompfrenzy.png\
-    https://i.imgur.com/qWyZLzf.png
+    https://i.imgur.com/KxTo6Dz.png
 cat <<EOF |tee magicstompfrenzy/usr/share/applications/magicstompfrenzy.desktop>/dev/null
 [Desktop Entry]
 Name=MagicstompFrenzy
