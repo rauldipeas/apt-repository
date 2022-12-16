@@ -11,7 +11,7 @@ chmod +x boilr/usr/bin/boilr
 wget -q --show-progress\
     https://raw.githubusercontent.com/PhilipK/BoilR/main/resources/256/io.github.philipk.boilr.png
 mv io.github.philipk.boilr.png boilr/usr/share/pixmaps/boilr.png
-cat <<EOF |tee boilr/usr/share/applications/boilr.desktop
+cat <<EOF |tee boilr/usr/share/applications/boilr.desktop>/dev/null
 [Desktop Entry]
 Name=BoilR
 Icon=boilr

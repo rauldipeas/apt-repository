@@ -17,7 +17,7 @@ sed -i "s/linux-headers-.*/linux-headers-rdx/g" repack-headers/DEBIAN/control
 dpkg-deb -b repack-headers .
 mkdir -p meta-rdx/DEBIAN
 META_VERSION=$(ls *.deb|head -n1|cut -d "_" -f2|cut -d "-" -f1)
-cat <<EOF |tee meta-rdx/DEBIAN/control
+cat <<EOF |tee meta-rdx/DEBIAN/control>/dev/null
 Package: linux-rdx
 Version: $META_VERSION-rdx-1
 Architecture: amd64

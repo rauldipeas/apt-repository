@@ -14,6 +14,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/webcamoid.svg) [**Iriun webcam**](https://iriun.com)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/devices/cpu.svg) [**Linux RDX**](https://github.com/rauldipeas/linux-rdx)
+- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/sfxr-qt.svg) [**MagicstompFrenzy**](https://github.com/dulnikovsky/magicstompfrenzy)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/office-calendar.svg) [**Morgen**](https://morgen.so)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/obs.svg) [**OBS multi RTMP**](https://sorayuki.github.io/obs-multi-rtmp)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/kmenuedit.svg) [**Plasma HUD**](https://github.com/Zren/plasma-hud)
