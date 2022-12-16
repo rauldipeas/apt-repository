@@ -5,7 +5,7 @@ git clone -q https://github.com/dulnikovsky/magicstompfrenzy magicstompfrenzy-so
 cd magicstompfrenzy-source
 mkdir build
 cd build
-sudo apt install libasound2-dev qt5base-dev qt5-qmake
+sudo apt install libasound2-dev qtbase5-dev qt5-qmake
 qmake ../MagicStompFrenzy.pro
 make
 cd ../..
