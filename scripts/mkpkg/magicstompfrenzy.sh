@@ -6,7 +6,7 @@ cd magicstompfrenzy-source
 mkdir build
 cd build
 sudo apt install libasound2-dev qtbase5-dev qt5-qmake
-qmake ../MagicStompFrenzy.pro
+qmake ../MagicstompFrenzy.pro
 make
 cd ../..
 mkdir -p magicstompfrenzy/{DEBIAN,usr/bin,usr/share/applications,usr/share/pixmaps}
