@@ -4,11 +4,11 @@ set -e
 mkdir -p assets/packages
 for SCRIPT in scripts/mkpkg/*.sh
 do
-    bash "$SCRIPT"
+    bash -x "$SCRIPT"
 done
 for SCRIPT in scripts/getpkg/*.sh
 do
-    bash "$SCRIPT"
+    bash -x "$SCRIPT"
 done
 mv ./*.deb assets/packages
 
