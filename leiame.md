@@ -1,14 +1,14 @@
-# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/distributor-logo-debian.svg) [APT repository](https://github.com/rauldipeas/apt-repository)
+# ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/distributor-logo-debian.svg) [Repositório APT](https://github.com/rauldipeas/apt-repository)
 
-This is my personal `apt` repository, which brings together packages that are not available in any other repository and also my own builds, made directly from the source code.
+Este é o meu repositório `apt` pessoal, que reúne pacotes que não estão disponíveis em nenhum outro repositório e também compilações próprias, feitas diretamente do código fonte.
 
-Packages in this repository are hosted on [**Gemfury**](https://gemfury.com).
+Os pacotes deste repositório estão hospedados no [**Gemfury**](https://gemfury.com).
 
-To add this repository to your system, use the command below:
+Para adicionar este repositório ao seu sistema, utilize o comando abaixo:
 ```
 bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/main/apt-repository.sh)
 ```
-## ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/mimetypes/application-x-compress.svg) Hosted packages:
+## ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/mimetypes/application-x-compress.svg) Pacotes hospedados:
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/devices/cpu.svg) [**CFS Zen tweaks**](https://github.com/igo95862/cfs-zen-tweaks)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/com.github.tkashkin.boiler.svg) [**BoilR**](https://github.com/PhilipK/BoilR)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/freezer.svg) [**Freezer**](https://freezerapk.com) [*(libssl1.1)*](http://security.ubuntu.com/ubuntu/pool/main/o/openssl)
@@ -37,7 +37,7 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/org.gnome.Extensions.svg) [**yabridge**](https://github.com/robbert-vdh/yabridge)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/zerotier-gui.svg) [**ZeroTier GUI**](https://github.com/tralph3/ZeroTier-GUI)
 
-### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/gnome-todo.svg) To do:
+### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/gnome-todo.svg) Por fazer:
 
 - [x] ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/16x16/apps/password-manager.svg) [~~*Aviso* do `apt` de `chave GPG` *faltando*~~](https://github.com/gemfury/gemfury/issues/87#issuecomment-1152661434)
     >~~***W:*** *Erro GPG: `https://rauldipeas.fury.site/apt *` InRelease: As assinaturas a seguir não puderam ser verificadas devido à chave pública não estar dispoível: `NO_PUBKEY 8686500724C20FBE`*~~
