@@ -37,7 +37,7 @@ tar fx wine-mono-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/mono/
 rm -r wine-gecko-*-x86.tar.xz
 rm -r wine-gecko-*-x86_64.tar.xz
 rm -r wine-mono-*-x86.tar.xz
-WINE_TKG_TAG="$(wget -qO- https://api.github.com/repos/Kron4ek/Wine-Builds/tags|grep name|head -n1|cut -d '"' -f4)"
+WINE_TKG_TAG="$(wget -qO- https://api.github.com/repos/Kron4ek/Wine-Builds/tags|grep name|grep -v '8.0-rc'|head -n1|cut -d '"' -f4)"
 cat <<EOF |tee wine-tkg/DEBIAN/control>/dev/null
 Package: wine-tkg
 Version: $WINE_TKG_TAG
