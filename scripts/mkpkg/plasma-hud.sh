@@ -15,8 +15,8 @@ Section: desktop
 Priority: optional
 Architecture: amd64
 Installed-Size: $(du -s plasma-hud|sed 's/ //g'|sed 's/plasma-hud//g')
-Maintainer: Martchus <Martchus@github.com>
-Description: Tray application and Dolphin/Plasma integration for Syncthing.
+Maintainer:  Chris Holland <Zren@github.com>
+Description: Provides a way to run menubar commands in KDE Plasma through rofi, much like the Unity 7 Heads-Up Display (HUD).
 EOF
 cd plasma-hud
 find -type f|sed 's@\./@@g'|grep -v DEBIAN|xargs md5sum>DEBIAN/md5sums
