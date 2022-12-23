@@ -36,7 +36,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/apt-repository/mai
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/com.github.joseexposito.touche.svg) [**Touche**](https://github.com/JoseExposito/touche)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/wine.svg) [**WINE TkG**](https://github.com/Kron4ek/Wine-Builds)
 - ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/org.gnome.Extensions.svg) [**yabridge**](https://github.com/robbert-vdh/yabridge)
-- ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/22x22/apps/zerotier-gui.svg) [**ZeroTier GUI**](https://github.com/tralph3/ZeroTier-GUI)
 
 ### ![](https://raw.githubusercontent.com/PapirusDevelopmentTeam/papirus-icon-theme/master/Papirus/32x32/apps/gnome-todo.svg) To do:
 
