@@ -6,7 +6,7 @@ wget -q --show-progress\
 dpkg-deb -x viber.deb viber
 dpkg-deb -e viber.deb viber/DEBIAN
 rm viber.deb
-sed -i 's@Icon=/usr/share/pixmaps/viber.png@Icon=viber/g' viber/usr/share/applications/viber.desktop
+sed -i 's@Icon=/usr/share/pixmaps/viber.png@Icon=viber@g' viber/usr/share/applications/viber.desktop
 echo 'StartupWMClass=Viber'|tee -a viber/usr/share/applications/viber.desktop
 dpkg-deb -b viber .
 mv viber*.deb assets/packages
