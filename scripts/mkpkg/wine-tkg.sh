@@ -3,14 +3,14 @@ set -e
 # WINE
 mkdir -p wine-tkg/{DEBIAN,etc/X11/Xsession.d,opt}
 wget -q --show-progress\
-    "$(wget -qO-\
+    "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN"\
         https://api.github.com/repos/Kron4ek/Wine-Builds/releases|\
         grep browser_download_url|grep staging-tkg-amd64.tar.xz|head -n1|cut -d '"' -f4)"
 tar fx wine*staging-tkg-amd64.tar.xz
 rm wine*staging-tkg-amd64.tar.xz
 mv wine*staging-tkg-amd64 wine-tkg/opt/wine-tkg
 wget -q --show-progress\
-    "$(wget -qO-\
+    "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN"\
         https://api.github.com/repos/GloriousEggroll/wine-ge-custom/releases|\
         grep browser_download_url|grep download|grep wine-lutris-ge|grep .tar.xz|head -n1|cut -d '"' -f4)"
 tar fx wine-lutris-ge*.tar.xz
@@ -37,7 +37,7 @@ tar fx wine-mono-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/mono/
 rm -r wine-gecko-*-x86.tar.xz
 rm -r wine-gecko-*-x86_64.tar.xz
 rm -r wine-mono-*-x86.tar.xz
-WINE_TKG_TAG="$(wget -qO- https://api.github.com/repos/Kron4ek/Wine-Builds/tags|grep name|head -n1|cut -d '"' -f4)"
+WINE_TKG_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/Kron4ek/Wine-Builds/tags|grep name|head -n1|cut -d '"' -f4)"
 cat <<EOF |tee wine-tkg/DEBIAN/control>/dev/null
 Package: wine-tkg
 Version: $WINE_TKG_TAG

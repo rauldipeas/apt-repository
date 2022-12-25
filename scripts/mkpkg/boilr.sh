@@ -2,7 +2,7 @@
 set -e
 # BoilR
 wget -q --show-progress\
-    "$(wget -qO-\
+    "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN"\
         https://api.github.com/repos/PhilipK/BoilR/releases|\
         grep browser_download_url|grep download|head -n1|cut -d '"' -f4)"
 mkdir -p boilr/DEBIAN boilr/usr/{bin,share/applications,share/pixmaps}
@@ -20,7 +20,7 @@ StartupNotify=true
 Categories=Game;
 Terminal=false
 EOF
-BOILR_TAG="$(wget -qO-\
+BOILR_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN"\
     https://api.github.com/repos/PhilipK/BoilR/releases|\
     grep tag|grep -v Next|head -n1|cut -d '"' -f4|\
     sed 's@https://github.com/PhilipK/BoilR/releases/tag/v.@@g')"
