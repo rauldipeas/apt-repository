@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 # Linux RDX
-wget -q --show-progress\
-    https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
+wget -q --show-progress https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
 unzip linux-rdx.zip
 rm linux-libc-dev_*_amd64.deb linux-rdx.zip
 dpkg-deb -x linux-image-*-rdx_*_amd64.deb repack-image

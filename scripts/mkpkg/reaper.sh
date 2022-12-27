@@ -22,11 +22,7 @@ rm -rf /tmp/*reaper* /tmp/*libSwell*
 wget -q --show-progress http://reaper.fm/"\$(wget -qO- http://reaper.fm/download.php|grep _linux_x86_64.tar.xz|cut -d '"' -f2)"
 tar fx reaper*_linux_x86_64.tar.xz -C /tmp
 sed -i 's/rmdir --/rm -rf --/g' /tmp/reaper*/install-reaper.sh
-/tmp/reaper*/install-reaper.sh\
-    --install /opt\
-    --integrate-desktop\
-    --quiet\
-    --integrate-sys-desktop
+/tmp/reaper*/install-reaper.sh --install /opt --integrate-desktop --quiet --integrate-sys-desktop
 wget -qO libSwell.colortheme https://stash.reaper.fm/41334/libSwell.colortheme
 mv libSwell.colortheme /opt/REAPER/libSwell.colortheme
 echo "

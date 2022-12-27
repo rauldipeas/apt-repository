@@ -1,8 +1,7 @@
 #!/bin/bash
 set -e
 
-wget -q --show-progress\
-    https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
+wget -q --show-progress https://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 dpkg-deb -x viber.deb viber
 dpkg-deb -e viber.deb viber/DEBIAN
 rm viber.deb
