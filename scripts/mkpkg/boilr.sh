@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # BoilR
-wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/PhilipK/BoilR/releases|grep browser_download_url|grep download|head -n1|cut -d '"' -f4)"
+wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/PhilipK/BoilR/releases|grep browser_download_url|head -n1|cut -d '"' -f4)"
 mkdir -p boilr/DEBIAN boilr/usr/{bin,share/applications,share/pixmaps}
 mv linux_BoilR boilr/usr/bin/boilr
 chmod +x boilr/usr/bin/boilr
@@ -16,7 +16,8 @@ StartupNotify=true
 Categories=Game;
 Terminal=false
 EOF
-BOILR_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/PhilipK/BoilR/releases|grep tag|grep -v Next|head -n1|cut -d '"' -f4|sed 's@https://github.com/PhilipK/BoilR/releases/tag/v.@@g')"
+#BOILR_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/PhilipK/BoilR/releases|grep tag|grep -v Next|head -n1|cut -d '"' -f4|sed 's@https://github.com/PhilipK/BoilR/releases/tag/v.@@g')"
+BOILR_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/PhilipK/BoilR|grep -v -e 'v0' -e 'v1'|cut -d '/' -f3|tail -n1|cut -d '.' -f2-4)"
 cat <<EOF |tee boilr/DEBIAN/control>/dev/null
 Package: boilr
 Version: $BOILR_TAG

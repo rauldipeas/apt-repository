@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # yabridge
-wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep browser_download_url|grep download|head -n2|tail -n1|cut -d '"' -f4)"
+wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep browser_download_url|head -n2|tail -n1|cut -d '"' -f4)"
 tar fxz yabridge*.tar.gz
 rm -r yabridge*.tar.gz
 mkdir -p yabridge/DEBIAN yabridge/usr/{bin,lib}
@@ -9,7 +9,8 @@ mv yabridge/yabridgectl yabridge/usr/bin/yabridgectl
 mv yabridge/libyabridge* yabridge/usr/lib/
 mv yabridge/yabridge* yabridge/usr/bin/
 rm -r yabridge/README.md yabridge/CHANGELOG.md
-YABRIDGE_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep tag|grep -v Next|head -n1|cut -d '"' -f4|sed 's@https://github.com/robbert-vdh/yabridge/releases/tag/@@g')"
+#YABRIDGE_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep tag|grep -v Next|head -n1|cut -d '"' -f4|sed 's@https://github.com/robbert-vdh/yabridge/releases/tag/@@g')"
+YABRIDGE_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/robbert-vdh/yabridge|grep -v '\^'|cut -d '/' -f3|tail -n1)"
 cat <<EOF |tee yabridge/DEBIAN/control>/dev/null
 Package: yabridge
 Version: $YABRIDGE_TAG
