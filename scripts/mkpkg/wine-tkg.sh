@@ -31,7 +31,6 @@ tar fx wine-mono-*-x86.tar.xz -C wine-tkg/opt/wine-tkg/share/wine/mono/
 rm -r wine-gecko-*-x86.tar.xz
 rm -r wine-gecko-*-x86_64.tar.xz
 rm -r wine-mono-*-x86.tar.xz
-#WINE_TKG_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/Kron4ek/Wine-Builds/tags|grep name|head -n1|cut -d '"' -f4)"
 WINE_TKG_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/Kron4ek/Wine-Builds|cut -d '/' -f3|tail -n1)"
 cat <<EOF |tee wine-tkg/DEBIAN/control>/dev/null
 Package: wine-tkg

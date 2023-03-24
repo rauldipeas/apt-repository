@@ -9,7 +9,6 @@ mv yabridge/yabridgectl yabridge/usr/bin/yabridgectl
 mv yabridge/libyabridge* yabridge/usr/lib/
 mv yabridge/yabridge* yabridge/usr/bin/
 rm -r yabridge/README.md yabridge/CHANGELOG.md
-#YABRIDGE_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep tag|grep -v Next|head -n1|cut -d '"' -f4|sed 's@https://github.com/robbert-vdh/yabridge/releases/tag/@@g')"
 YABRIDGE_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/robbert-vdh/yabridge|grep -v '\^'|cut -d '/' -f3|tail -n1)"
 cat <<EOF |tee yabridge/DEBIAN/control>/dev/null
 Package: yabridge

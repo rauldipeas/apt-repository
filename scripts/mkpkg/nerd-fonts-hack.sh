@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-# Nerd Fonts(LSD)
+# Nerd Fonts (LSD)
 git clone -q https://aur.archlinux.org/nerd-fonts-hack.git
 cd nerd-fonts-hack
 makedeb

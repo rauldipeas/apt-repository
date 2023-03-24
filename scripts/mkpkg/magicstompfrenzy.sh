@@ -21,7 +21,6 @@ Terminal=false
 Type=Application
 Categories=AudioVideo;
 EOF
-#MAGICSTOMPFRENZY_TAG="$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/dulnikovsky/magicstompfrenzy/releases|grep tag|head -n1|cut -d '"' -f4|sed 's@https://github.com/dulnikovsky/magicstompfrenzy/releases/tag/v@@g')"
 MAGICSTOMPFRENZY_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/dulnikovsky/magicstompfrenzy|cut -d '/' -f3|tail -n1|cut -d 'v' -f2)"
 cat <<EOF |tee magicstompfrenzy/DEBIAN/control>/dev/null
 Package: magicstompfrenzy
