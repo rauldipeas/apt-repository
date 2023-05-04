@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # Hasmsket
-aria2c --console-log-level=error --summary-interval=0 $(curl -su $GH_API_AUTH https://api.github.com/repos/TheGoddessInari/Hamsket/releases|grep browser_download_url|grep amd64.deb|head -n1|cut -d '"' -f4)
+wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/TheGoddessInari/Hamsket/releases|grep browser_download_url|grep amd64.deb|head -n1|cut -d '"' -f4)"
 dpkg-deb -x Hamsket*.deb hamsket
 dpkg-deb -e Hamsket*.deb hamsket/DEBIAN
 rm -rf Hamsket*.deb
