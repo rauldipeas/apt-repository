@@ -63,5 +63,5 @@ find /usr/local/share/ -name *x-reaper* -delete
 EOF
 chmod +x cockos-reaper/DEBIAN/prerm
 dpkg-deb -b cockos-reaper .
-mv cockos-reaper*.deb assets/packages
-rm -r cockos-reaper*
+#mv cockos-reaper*.deb assets/packages
+rm -r cockos-reaper

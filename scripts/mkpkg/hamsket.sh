@@ -27,5 +27,5 @@ EOF
 npx asar p app-hamsket app.asar
 mv app.asar hamsket/opt/Hamsket/resources/app.asar
 dpkg-deb -b hamsket .
-mv hamsket*.deb assets/packages
-rm -rf *hamsket*
+#mv hamsket*.deb assets/packages
+rm -rf *hamsket

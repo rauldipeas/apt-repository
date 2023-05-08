@@ -28,5 +28,5 @@ Priority: optional
 Description: Este pacote contém uma versão sem modificações do kernel Linux, apenas com patches de correções para o meu hardware pessoal.
 EOF
 dpkg-deb -b meta-rdx .
-mv *.deb assets/packages
+#mv *.deb assets/packages
 rm -r meta-rdx repack-*

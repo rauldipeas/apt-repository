@@ -33,5 +33,5 @@ Maintainer: dulnikovsky <dulnikovsky@github.com>
 Description: Editor for Yamaha Magicstomp Guitar Effect Processor.
 EOF
 dpkg-deb -b magicstompfrenzy .
-mv magicstompfrenzy*.deb assets/packages
-rm -r magicstompfrenzy*
+#mv magicstompfrenzy*.deb assets/packages
+rm -r magicstompfrenzy
