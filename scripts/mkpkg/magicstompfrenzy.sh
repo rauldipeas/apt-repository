@@ -11,7 +11,6 @@ make
 cd ../..
 mkdir -p magicstompfrenzy/{DEBIAN,usr/bin,usr/share/applications,usr/share/pixmaps}
 mv magicstompfrenzy-source/build/MagicstompFrenzy magicstompfrenzy/usr/bin/
-#wget -q --show-progress -O magicstompfrenzy/usr/share/pixmaps/magicstompfrenzy.png https://i.imgur.com/KxTo6Dz.png
 cp assets/magicstompfrenzy/magicstompfrenzy.png magicstompfrenzy/usr/share/pixmaps/magicstompfrenzy.png
 cat <<EOF |tee magicstompfrenzy/usr/share/applications/magicstompfrenzy.desktop>/dev/null
 [Desktop Entry]
@@ -33,5 +32,4 @@ Maintainer: dulnikovsky <dulnikovsky@github.com>
 Description: Editor for Yamaha Magicstomp Guitar Effect Processor.
 EOF
 dpkg-deb -b magicstompfrenzy .
-#mv magicstompfrenzy*.deb assets/packages
 rm -r magicstompfrenzy

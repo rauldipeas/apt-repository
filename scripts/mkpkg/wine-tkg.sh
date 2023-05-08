@@ -52,5 +52,4 @@ export WINEESYNC=1
 export WINEFSYNC=1
 EOF
 dpkg-deb -b wine-tkg .
-#mv wine-tkg*.deb assets/packages
 rm -r wine-tkg

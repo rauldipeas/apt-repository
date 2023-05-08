@@ -21,5 +21,4 @@ Maintainer: Robbert van der Helm <mail@robbertvanderhelm.nl>
 Description: Yet Another way to use Windows VST plugins on Linux. Yabridge seamlessly supports using both 32-bit and 64-bit Windows VST2 and VST3 plugins in a 64-bit Linux VST host as if they were native VST2 and VST3 plugins, with optional support for plugin groups to enable inter-plugin communication for VST2 plugins and quick startup times. Its modern concurrent architecture and focus on transparency allows yabridge to be both fast and highly compatible, while also staying easy to debug and maintain.
 EOF
 dpkg-deb -b yabridge .
-#mv yabridge*.deb assets/packages
 rm -r yabridge

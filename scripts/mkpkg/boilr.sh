@@ -28,5 +28,4 @@ Maintainer:  Philip Kristoffersen <philipkristoffersen@gmail.com>
 Description: Synchronize games from other platforms into your Steam library.
 EOF
 dpkg-deb -b boilr .
-#mv boilr*.deb assets/packages
 rm -r boilr

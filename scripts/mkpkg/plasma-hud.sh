@@ -21,5 +21,4 @@ cd plasma-hud
 find -type f|sed 's@\./@@g'|grep -v DEBIAN|xargs md5sum>DEBIAN/md5sums
 cd ..
 dpkg-deb -b plasma-hud .
-#cp plasma-hud*.deb assets/packages/
 rm -r plasma-hud

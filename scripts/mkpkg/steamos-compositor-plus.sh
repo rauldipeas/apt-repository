@@ -19,5 +19,4 @@ apt-fast install -y\
 sed -i 's/steamdeck/gamepadui/g' usr/bin/steamos-session
 dpkg-buildpackage -b -us -uc
 cd ..
-#mv steamos-compositor-plus*.deb assets/packages
 rm -r steamos-compositor-plus

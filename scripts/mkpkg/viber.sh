@@ -8,5 +8,4 @@ rm viber.deb
 sed -i 's@Icon=/usr/share/pixmaps/viber.png@Icon=viber@g' viber/usr/share/applications/viber.desktop
 echo 'StartupWMClass=Viber'|tee -a viber/usr/share/applications/viber.desktop
 dpkg-deb -b viber .
-#mv viber*.deb assets/packages
 rm -r viber

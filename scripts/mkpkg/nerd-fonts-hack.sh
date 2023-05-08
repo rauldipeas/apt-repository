@@ -5,6 +5,5 @@ git clone -q https://aur.archlinux.org/nerd-fonts-hack.git
 cd nerd-fonts-hack
 makedeb
 cd ..
-#cp nerd-fonts-hack/nerd-fonts-hack*.deb assets/packages/
 cp nerd-fonts-hack/nerd-fonts-hack*.deb .
 rm -r nerd-fonts-hack
