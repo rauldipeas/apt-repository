@@ -21,7 +21,7 @@ Terminal=false
 Type=Application
 Categories=AudioVideo;
 EOF
-MAGICSTOMPFRENZY_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/dulnikovsky/magicstompfrenzy|cut -d '/' -f3|tail -n1|cut -d 'v' -f2)"
+MAGICSTOMPFRENZY_TAG="$(git ls-remote --sort='version:refname' -t https://github.com/dulnikovsky/magicstompfrenzy|cut -d '/' -f3|tail -n1|cut -d 'v' -f2|cut -d '^' -f1)"
 cat <<EOF |tee magicstompfrenzy/DEBIAN/control>/dev/null
 Package: magicstompfrenzy
 Version: $MAGICSTOMPFRENZY_TAG
