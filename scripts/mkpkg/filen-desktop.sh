@@ -10,6 +10,7 @@ sed -i 's@AppRun --no-sandbox@/opt/filen-desktop/filen-desktop@g' filen-desktop/
 mv squashfs-root/usr/share/icons filen-desktop/usr/share/
 rm -r squashfs-root/{AppRun,usr}
 mv squashfs-root filen-desktop/opt/filen-desktop
+cp assets/filen-desktop/*.png filen-desktop/opt/filen-desktop/resources/app/src/assets/icons/tray/
 FILEN_VERSION="$(cat filen-desktop/opt/filen-desktop/resources/app/package.json|grep version|head -n1|cut -d '"' -f4)"
 cat <<EOF |tee filen-desktop/DEBIAN/control>/dev/null
 Package: filen-desktop
