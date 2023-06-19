@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 # Linux RDX
-if [ $(wget -qO- https://nightly.link) ];then 
-    echo "nightly.link ativo"
+if [[ $(wget -qO- https://nightly.link>/dev/null) -eq 0 ]];then
+    echo 'nightly.link ativo'
     wget -q --show-progress https://nightly.link/rauldipeas/linux-rdx/workflows/linux-rdx/main/linux-rdx.zip
     unzip linux-rdx.zip
     rm linux-libc-dev_*_amd64.deb linux-rdx.zip
@@ -31,5 +31,5 @@ EOF
     dpkg-deb -b meta-rdx .
     rm -r meta-rdx repack-*
     else
-    echo "nightly.link inativo"
+    echo 'nightly.link inativo'
 fi
