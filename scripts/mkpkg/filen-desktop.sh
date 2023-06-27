@@ -15,6 +15,7 @@ FILEN_VERSION="$(cat filen-desktop/opt/filen-desktop/resources/app/package.json|
 cat <<EOF |tee filen-desktop/DEBIAN/control>/dev/null
 Package: filen-desktop
 Version: $FILEN_VERSION
+Depends: libayatana-appindicator3-1
 Architecture: amd64
 Maintainer:  Filen Cloud Dienste  <FilenCloudDienste@github.com>
 Section: kernel
