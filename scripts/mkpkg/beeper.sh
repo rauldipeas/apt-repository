@@ -10,7 +10,7 @@ sed -i 's@AppRun --no-sandbox@/opt/beeper/beeper --no-sandbox@g' beeper/usr/shar
 mv squashfs-root/usr/share/icons beeper/usr/share/
 rm -r squashfs-root/{.DirIcon,AppRun,usr}
 mv squashfs-root beeper/opt/beeper
-BEEPER_VERSION="$(fd beeper*.AppImage|cut -d '-' -f2|cut -d '.' -f1-3)"
+BEEPER_VERSION="$(find beeper*.AppImage|cut -d '-' -f2|cut -d '.' -f1-3)"
 cat <<EOF |tee beeper/DEBIAN/control>/dev/null
 Package: beeper
 Version: $BEEPER_VERSION
