@@ -2,14 +2,14 @@
 set -e
 # TuxGuitar
 TG_SOURCEFORGE='https://sourceforge.net/projects/tuxguitar/files/TuxGuitar'
-TG_VERSION=$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)
-TG_DEB=$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)|grep x86_64.deb|head -n1|cut -d '"' -f2)
-TG_TAR=$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)|grep tar.gz|grep qt5|head -n1|cut -d '"' -f2)
-wget -q --show-progress $TG_SOURCEFORGE/$TG_VERSION/$TG_DEB
+TG_VERSION="$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)"
+TG_DEB="$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/"$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)"|grep x86_64.deb|head -n1|cut -d '"' -f2)"
+TG_TAR="$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/"$(wget -qO- https://sourceforge.net/projects/tuxguitar/files/TuxGuitar/|grep timeline|head -n1|cut -d '/' -f6)"|grep tar.gz|grep qt5|head -n1|cut -d '"' -f2)"
+wget -q --show-progress "$TG_SOURCEFORGE"/"$TG_VERSION"/"$TG_DEB"
 dpkg-deb -x tuxguitar*.deb tuxguitar
 dpkg-deb -e tuxguitar*.deb tuxguitar/DEBIAN
 rm tuxguitar*.deb
-wget -q --show-progress $TG_SOURCEFORGE/$TG_VERSION/$TG_TAR
+wget -q --show-progress "$TG_SOURCEFORGE"/"$TG_VERSION"/"$TG_TAR"
 tar fxz tuxguitar*.tar.gz
 rm tuxguitar*.tar.gz
 rm -r tuxguitar/opt/tuxguitar
