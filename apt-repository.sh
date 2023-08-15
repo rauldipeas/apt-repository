@@ -10,4 +10,8 @@ Suites: *
 Components: *
 Trusted: yes
 EOF
-pkcon refresh 2>/dev/null
+if [ -f /usr/bin/nala ];then
+  sudo nala update
+  else
+  sudo apt -qq update
+fi
