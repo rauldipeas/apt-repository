@@ -16,7 +16,7 @@ sudo apt install -y\
     qml-module-qtquick-dialogs\
     qml-module-qtwebchannel\
     qml-module-qtwebengine\
-    qt5-default\
+    qt5-qmake\
     qtdeclarative5-dev\
     qtdeclarative5-dev-tools\
     qtwebengine5-dev\
