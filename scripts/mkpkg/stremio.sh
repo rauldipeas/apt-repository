@@ -42,7 +42,7 @@ sudo checkinstall\
     --pkggroup video\
     --pkglicense="MIT"\
     --nodoc\
-    --pkgarch=$(dpkg --print-architecture)\
+    --pkgarch="$(dpkg --print-architecture)"\
     --requires="nodejs,libmpv1 \(\>=0.30.0\),qml-module-qt-labs-platform \(\>=5.9.5\),qml-module-qtquick-controls \(\>=5.9.5\),qml-module-qtquick-dialogs \(\>=5.9.5\),qml-module-qtwebchannel \(\>=5.9.5\),qml-module-qtwebengine \(\>=5.9.5\),qml-module-qt-labs-folderlistmodel \(\>=5.9.5\),qml-module-qt-labs-settings \(\>=5.9.5\),librubberband2 \(\>=1.8.1\),libuchardet0  \(\>=0.0.6\),libfdk-aac2 \(\>=2.0.2\)"\
     make -f release.makefile install
 cd ..
