@@ -33,7 +33,8 @@ cp dist-utils/common/postinstall ./postinstall-pak
 cp dist-utils/common/preremove ./preremove-pak
 make -f release.makefile clean
 make -f release.makefile
-wget -q --show-progress https://dl.strem.io/server/v4.20.2/desktop/server.js -O build/server.js 
+#wget -q --show-progress https://dl.strem.io/server/v4.20.2/desktop/server.js -O build/server.js
+cp ../assets/stremio/server.js build/server.js
 sudo checkinstall\
     --default\
     --install=no\
