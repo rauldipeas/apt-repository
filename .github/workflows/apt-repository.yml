@@ -22,7 +22,7 @@ jobs:
       - name: Configuração do ambiente de compilação
         run: bash scripts/env.sh
         env:
-          KISAK_MESA_GPG_KEY: $(cat assets/kisak-mesa/key.gpg)
+          KISAK_MESA_GPG_KEY: ${{ secrets.KISAK_MESA_GPG_KEY }}
       - name: Compilação do repositório APT
         run: bash scripts/build.sh
         env:
