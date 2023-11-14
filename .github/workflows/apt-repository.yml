@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Configuração do ambiente de compilação
-        run: bash scripts/env.sh
+        run: bash -x scripts/env.sh
         env:
           KISAK_MESA_GPG_KEY: ${{ secrets.KISAK_MESA_GPG_KEY }}
           MAKEDEB_GPG_KEY: ${{ secrets.MAKEDEB_GPG_KEY }}
