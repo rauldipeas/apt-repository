@@ -23,6 +23,7 @@ jobs:
         run: bash scripts/env.sh
         env:
           KISAK_MESA_GPG_KEY: ${{ secrets.KISAK_MESA_GPG_KEY }}
+          MAKEDEB_GPG_KEY: ${{ secrets.MAKEDEB_GPG_KEY }}
       - name: Compilação do repositório APT
         run: bash scripts/build.sh
         env:
