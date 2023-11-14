@@ -23,7 +23,7 @@ echo 'deb http://ppa.launchpad.net/kisak/kisak-mesa/ubuntu jammy main'|sudo tee 
 echo "$KISAK_MESA_GPG_KEY"|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kisak-mesa.gpg>/dev/null
 echo 'deb [arch=all] https://proget.hunterwittenborn.com makedeb main'|sudo tee /etc/apt/sources.list.d/makedeb.list>/dev/null
 #wget -qO- 'https://proget.hunterwittenborn.com/debian-feeds/makedeb.pub'|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/makedeb-archive-keyring.gpg>/dev/null
-echo "$MAKEDEB_GPG_KEY"|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kisak-mesa.gpg>/dev/null
+echo "$MAKEDEB_GPG_KEY"|sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/makedeb.gpg>/dev/null
 sudo dpkg --add-architecture i386
 sudo apt update
 sudo apt install -y makedeb
