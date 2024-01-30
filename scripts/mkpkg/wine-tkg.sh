@@ -12,7 +12,7 @@ cp lutris*/lib/wine/i386-windows/winemenubuilder.exe wine-tkg/opt/wine-tkg/lib/w
 cp lutris*/lib64/wine/x86_64-windows/winemenubuilder.exe wine-tkg/opt/wine-tkg/lib/wine/x86_64-windows/winemenubuilder.exe
 find . -name "*lutris-ge*" -print0|xargs -0 rm -r
 WINE_GECKO_VER="$(wget -qO- https://dl.winehq.org/wine/wine-gecko/|grep folder|cut -d '"' -f6|sort -d|grep -v wine|tail -n1)"
-wget -qO- https://dl.winehq.org/wine/wine-gecko/"$WINE_GECKO_VER"|grep x86|grep tar|grep -wv pdb|cut -d '"' -f6>wine-gecko.links
+wget -qO- https://dl.winehq.org/wine/wine-gecko/"$WINE_GECKO_VER"|grep x86|grep tar|grep -wv pdb|grep -wv rc|cut -d '"' -f6>wine-gecko.links
 sed -i 's@wine-gecko@https://dl.winehq.org/wine/wine-gecko/wine-gecko@g' wine-gecko.links
 sed -i 's@wine/wine-gecko/@'wine/wine-gecko/"$WINE_GECKO_VER"'@g' wine-gecko.links
 wget -q --show-progress "$(cat<wine-gecko.links|head -n1)"
