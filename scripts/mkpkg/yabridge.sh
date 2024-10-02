@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 # yabridge
-wget -q --show-progress "$(wget -qO- --header="X-Auth-Token: $GITHUB_TOKEN" https://api.github.com/repos/robbert-vdh/yabridge/releases|grep browser_download_url|head -n2|tail -n1|cut -d '"' -f4)"
+wget -q --show-progress "$(wget -qO- https://api.github.com/repos/robbert-vdh/yabridge/releases|grep browser_download_url|head -n2|tail -n1|cut -d '"' -f4)"
 tar fxz yabridge*.tar.gz
 rm -r yabridge*.tar.gz
 mkdir -p yabridge/DEBIAN yabridge/usr/{bin,lib}
