@@ -11,6 +11,7 @@ Maintainer: Justin Frankel <justinfrankel@reaper.fm>
 Pre-depends: aria2, wget
 Depends: cadence|studio-controls|qjackctl, tar
 Recommends: q4wine, yabridge
+Conflicts: meterbridge
 Section: audio
 Priority: optional
 Homepage: https://reaper.fm
