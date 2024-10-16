@@ -20,5 +20,5 @@ done
 # Packagecloud
 for PACKAGE in *.deb
 do
-    package_cloud push rauldipeas/deb "$PACKAGE"
+    package_cloud push rauldipeas/deb/debian/bookworm "$PACKAGE"
 done
