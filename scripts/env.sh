@@ -17,7 +17,7 @@ sudo rm -r\
     /usr/share/dotnet
 sudo rm -r /etc/apt/sources.list.d/*.list
 sudo apt install -y ruby-full
-gem install package_cloud
+sudo gem install package_cloud
 cat <<EOF |tee "$HOME"/.packagecloud
 {"url":"https://packagecloud.io", "token": "$PACKAGECLOUD_TOKEN"}
 EOF
