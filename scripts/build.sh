@@ -18,9 +18,7 @@ done
 #fury packages|sed 's/deb   /@/g'|sed 's/public//g'|sed 's/ //g'|sed 's/\*\*\*GEMFURYPACKAGES\*\*\*//g'|sed 's/namekindversionprivacy//g'|tee fury-packages>/dev/null;xargs fury yank --force <fury-packages
 
 # Packagecloud
-#PACKAGECLOUD_ID="curl https://$PACKAGECLOUD_TOKEN:@packagecloud.io/api/v1/distributions.json|grep id|cut -d ' ' -f2"
 for PACKAGE in *.deb
 do
-    #package_cloud push rauldipeas/deb/debian/bookworm "$PACKAGE"
-    curl -F "package[distro_version_id]=215" -F "package[package_file]=@$PACKAGE" https://"$PACKAGECLOUD_TOKEN":@packagecloud.io/api/v1/repos/rauldipeas/deb/packages.json
+    curl -sF "package[distro_version_id]=215" -F "package[package_file]=@$PACKAGE" https://"$PACKAGECLOUD_TOKEN":@packagecloud.io/api/v1/repos/rauldipeas/deb/packages.json
 done
