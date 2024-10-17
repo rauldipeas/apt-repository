@@ -26,5 +26,5 @@ done
 # BaltoRepo
 for PACKAGE in *.deb
 do
-    curl --verbose --header "Authorization: Bearer $BALTOREPO_TOKEN" --form "package=@$PACKAGE" --form "distribution=all" https://rauldipeas.baltorepo.com/debian-rdx/debian-rdx/upload/
+    curl -s --header "Authorization: Bearer $BALTOREPO_TOKEN" --form "package=@$PACKAGE" --form "distribution=all" https://rauldipeas.baltorepo.com/debian-rdx/debian-rdx/upload/
 done
