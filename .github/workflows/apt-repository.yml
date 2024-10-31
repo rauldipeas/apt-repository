@@ -27,7 +27,10 @@ jobs:
           GEMFURY_PUSH_TOKEN: ${{ secrets.GEMFURY_PUSH_TOKEN }}
           PACKAGECLOUD_TOKEN: ${{ secrets.PACKAGECLOUD_TOKEN }}
           BALTOREPO_TOKEN: ${{ secrets.BALTOREPO_TOKEN }}
-      - name: Limpeza de logs antigos
-        run: bash scripts/actions-cleanup.sh
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: otto-de/purge-deprecated-workflow-runs@v2
+        with:
+          remove-cancelled: true
+          remove-failed: true
+          remove-obsolete: false
+          token: ${{ secrets.PAT }}
+          #remove-older-than: 7d
