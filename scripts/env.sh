@@ -16,3 +16,4 @@ sudo rm -r\
     /opt/az\
     /usr/share/dotnet
 sudo rm -r /etc/apt/sources.list.d/*.list
+sudo apt update
